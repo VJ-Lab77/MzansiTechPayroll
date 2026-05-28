@@ -12,18 +12,14 @@ This is a Windows Forms payroll application developed for **Mzansi Tech Contract
 
 ## Project Structure
 Solution 'MzansiTechPayroll'
-│
-├── MzansiTechPayroll/ # MAIN APPLICATION (WORKING)
-│ ├── MainForm.cs # Windows Forms UI with validation
-│ ├── PayrollCalculator.cs # Business logic for calculations
-│ ├── Program.cs # Application entry point
-│ └── App.config # Application configuration
-│
-├── MzansiTechPayroll.Tests/ # INITIAL TESTS (FAILED)
-│ └── PayrollCalculatorTests.cs # Tests that failed due to framework mismatch
-│
-└── MzansiTechsPayroll/ # CORRECT TESTS (PASSING)
-└── PayrollCalculatorTests.cs # All 9 tests passing
+
+### Project Descriptions
+
+| Project | Status | Description |
+|---------|--------|-------------|
+| `MzansiTechPayroll` |  WORKING | Main Windows Forms application |
+| `MzansiTechPayroll.Tests` |  FAILED | Initial test project (.NET 8.0) - Framework mismatch |
+| `MzansiTechsPayroll` |  PASSING | Correct test project (.NET 4.7.2) - All tests pass |
 
 
 
