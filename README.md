@@ -19,7 +19,7 @@ Solution 'MzansiTechPayroll'
 |---------|--------|-------------|
 | `MzansiTechPayroll` |  WORKING | Main Windows Forms application |
 | `MzansiTechPayroll.Tests` |  FAILED | Initial test project (.NET 8.0) - Framework mismatch |
-| `MzansiTechsPayroll` |  PASSING | Correct test project (.NET 4.7.2) - All tests pass |
+| `MzansiTechsPayroll.Tests` |  PASSING | Correct test project (.NET 4.7.2) - All tests pass |
 
 
 
