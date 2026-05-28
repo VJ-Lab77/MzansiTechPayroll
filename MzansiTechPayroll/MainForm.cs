@@ -5,7 +5,7 @@ namespace MzansiTechPayroll
 {
     public partial class MainForm : Form
     {
-        // Declare the calculator object
+        
         private PayrollCalculator calculator;
 
         public MainForm()
@@ -14,7 +14,7 @@ namespace MzansiTechPayroll
             calculator = new PayrollCalculator();
         }
 
-        // This method creates all the UI controls programmatically
+        
         private void InitializeComponent()
         {
             this.lblTitle = new System.Windows.Forms.Label();
@@ -44,9 +44,9 @@ namespace MzansiTechPayroll
             this.grpInput.SuspendLayout();
             this.grpOutput.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblTitle
-            // 
+
+
+            
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
@@ -56,9 +56,9 @@ namespace MzansiTechPayroll
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Mzansi Tech Contractors Payroll System";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // grpInput
-            // 
+
+
+             
             this.grpInput.BackColor = System.Drawing.Color.Lavender;
             this.grpInput.Controls.Add(this.lblContractorName);
             this.grpInput.Controls.Add(this.txtContractorName);
@@ -74,63 +74,63 @@ namespace MzansiTechPayroll
             this.grpInput.TabIndex = 1;
             this.grpInput.TabStop = false;
             this.grpInput.Text = "Contractor Details";
-            // 
-            // lblContractorName
-            // 
+
+
+            
             this.lblContractorName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblContractorName.Location = new System.Drawing.Point(15, 30);
             this.lblContractorName.Name = "lblContractorName";
             this.lblContractorName.Size = new System.Drawing.Size(120, 25);
             this.lblContractorName.TabIndex = 0;
             this.lblContractorName.Text = "Contractor Name:";
-            // 
-            // txtContractorName
-            // 
+
+
+            
             this.txtContractorName.BackColor = System.Drawing.Color.Lavender;
             this.txtContractorName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtContractorName.Location = new System.Drawing.Point(15, 58);
             this.txtContractorName.Name = "txtContractorName";
             this.txtContractorName.Size = new System.Drawing.Size(240, 27);
             this.txtContractorName.TabIndex = 1;
-            // 
-            // lblHoursWorked
-            // 
+
+
+            
             this.lblHoursWorked.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblHoursWorked.Location = new System.Drawing.Point(15, 90);
             this.lblHoursWorked.Name = "lblHoursWorked";
             this.lblHoursWorked.Size = new System.Drawing.Size(120, 25);
             this.lblHoursWorked.TabIndex = 2;
             this.lblHoursWorked.Text = "Hours Worked:";
-            // 
-            // txtHoursWorked
-            // 
+            
+
+             
             this.txtHoursWorked.BackColor = System.Drawing.Color.Lavender;
             this.txtHoursWorked.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtHoursWorked.Location = new System.Drawing.Point(15, 115);
             this.txtHoursWorked.Name = "txtHoursWorked";
             this.txtHoursWorked.Size = new System.Drawing.Size(240, 27);
             this.txtHoursWorked.TabIndex = 3;
-            // 
-            // lblDependents
-            // 
+            
+
+            
             this.lblDependents.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblDependents.Location = new System.Drawing.Point(15, 150);
             this.lblDependents.Name = "lblDependents";
             this.lblDependents.Size = new System.Drawing.Size(180, 25);
             this.lblDependents.TabIndex = 4;
             this.lblDependents.Text = "Dependents (0 - 10):";
-            // 
-            // txtDependents
-            // 
+            
+
+             
             this.txtDependents.BackColor = System.Drawing.Color.Lavender;
             this.txtDependents.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDependents.Location = new System.Drawing.Point(15, 175);
             this.txtDependents.Name = "txtDependents";
             this.txtDependents.Size = new System.Drawing.Size(240, 27);
             this.txtDependents.TabIndex = 5;
-            // 
-            // grpOutput
-            // 
+            
+
+             
             this.grpOutput.BackColor = System.Drawing.Color.Lavender;
             this.grpOutput.Controls.Add(this.lblGrossPayLabel);
             this.grpOutput.Controls.Add(this.lblGrossPayValue);
@@ -152,18 +152,18 @@ namespace MzansiTechPayroll
             this.grpOutput.TabIndex = 2;
             this.grpOutput.TabStop = false;
             this.grpOutput.Text = "Payroll Results";
-            // 
-            // lblGrossPayLabel
-            // 
+
+            
+            
             this.lblGrossPayLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblGrossPayLabel.Location = new System.Drawing.Point(15, 30);
             this.lblGrossPayLabel.Name = "lblGrossPayLabel";
             this.lblGrossPayLabel.Size = new System.Drawing.Size(120, 25);
             this.lblGrossPayLabel.TabIndex = 0;
             this.lblGrossPayLabel.Text = "Gross Pay:";
-            // 
-            // lblGrossPayValue
-            // 
+            
+
+            
             this.lblGrossPayValue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblGrossPayValue.Location = new System.Drawing.Point(140, 30);
             this.lblGrossPayValue.Name = "lblGrossPayValue";
@@ -171,18 +171,20 @@ namespace MzansiTechPayroll
             this.lblGrossPayValue.TabIndex = 1;
             this.lblGrossPayValue.Text = "R 0.00";
             this.lblGrossPayValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblUIFLabel
-            // 
+
+
+
+            
             this.lblUIFLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblUIFLabel.Location = new System.Drawing.Point(15, 65);
             this.lblUIFLabel.Name = "lblUIFLabel";
             this.lblUIFLabel.Size = new System.Drawing.Size(120, 25);
             this.lblUIFLabel.TabIndex = 2;
             this.lblUIFLabel.Text = "UIF (1%):";
-            // 
-            // lblUIFValue
-            // 
+            
+
+
+            
             this.lblUIFValue.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblUIFValue.Location = new System.Drawing.Point(140, 65);
             this.lblUIFValue.Name = "lblUIFValue";
@@ -190,18 +192,18 @@ namespace MzansiTechPayroll
             this.lblUIFValue.TabIndex = 3;
             this.lblUIFValue.Text = "R 0.00";
             this.lblUIFValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblPAYELabel
-            // 
+            
+
+            
             this.lblPAYELabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblPAYELabel.Location = new System.Drawing.Point(15, 100);
             this.lblPAYELabel.Name = "lblPAYELabel";
             this.lblPAYELabel.Size = new System.Drawing.Size(120, 25);
             this.lblPAYELabel.TabIndex = 4;
             this.lblPAYELabel.Text = "PAYE:";
-            // 
-            // lblPAYEValue
-            // 
+
+
+            
             this.lblPAYEValue.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblPAYEValue.Location = new System.Drawing.Point(140, 100);
             this.lblPAYEValue.Name = "lblPAYEValue";
@@ -209,18 +211,18 @@ namespace MzansiTechPayroll
             this.lblPAYEValue.TabIndex = 5;
             this.lblPAYEValue.Text = "R 0.00";
             this.lblPAYEValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblMembershipLabel
-            // 
+            
+
+            
             this.lblMembershipLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblMembershipLabel.Location = new System.Drawing.Point(15, 135);
             this.lblMembershipLabel.Name = "lblMembershipLabel";
             this.lblMembershipLabel.Size = new System.Drawing.Size(120, 25);
             this.lblMembershipLabel.TabIndex = 6;
             this.lblMembershipLabel.Text = "Membership Fee (13%):";
-            // 
-            // lblMembershipValue
-            // 
+            
+
+             
             this.lblMembershipValue.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblMembershipValue.Location = new System.Drawing.Point(140, 135);
             this.lblMembershipValue.Name = "lblMembershipValue";
@@ -228,18 +230,18 @@ namespace MzansiTechPayroll
             this.lblMembershipValue.TabIndex = 7;
             this.lblMembershipValue.Text = "R 0.00";
             this.lblMembershipValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblTotalDeductionsLabel
-            // 
+            
+
+             
             this.lblTotalDeductionsLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblTotalDeductionsLabel.Location = new System.Drawing.Point(15, 175);
             this.lblTotalDeductionsLabel.Name = "lblTotalDeductionsLabel";
             this.lblTotalDeductionsLabel.Size = new System.Drawing.Size(120, 25);
             this.lblTotalDeductionsLabel.TabIndex = 8;
             this.lblTotalDeductionsLabel.Text = "Total Deductions:";
-            // 
-            // lblTotalDeductionsValue
-            // 
+            
+
+             
             this.lblTotalDeductionsValue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblTotalDeductionsValue.Location = new System.Drawing.Point(140, 175);
             this.lblTotalDeductionsValue.Name = "lblTotalDeductionsValue";
@@ -247,18 +249,18 @@ namespace MzansiTechPayroll
             this.lblTotalDeductionsValue.TabIndex = 9;
             this.lblTotalDeductionsValue.Text = "R 0.00";
             this.lblTotalDeductionsValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblNetPayLabel
-            // 
+            
+
+             
             this.lblNetPayLabel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblNetPayLabel.Location = new System.Drawing.Point(15, 215);
             this.lblNetPayLabel.Name = "lblNetPayLabel";
             this.lblNetPayLabel.Size = new System.Drawing.Size(120, 25);
             this.lblNetPayLabel.TabIndex = 10;
             this.lblNetPayLabel.Text = "Net Pay:";
-            // 
-            // lblNetPayValue
-            // 
+            
+
+            
             this.lblNetPayValue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblNetPayValue.ForeColor = System.Drawing.Color.Green;
             this.lblNetPayValue.Location = new System.Drawing.Point(140, 215);
@@ -267,9 +269,9 @@ namespace MzansiTechPayroll
             this.lblNetPayValue.TabIndex = 11;
             this.lblNetPayValue.Text = "R 0.00";
             this.lblNetPayValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // btnCalculate
-            // 
+            
+
+             
             this.btnCalculate.BackColor = System.Drawing.Color.Lavender;
             this.btnCalculate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnCalculate.Location = new System.Drawing.Point(12, 344);
@@ -279,9 +281,9 @@ namespace MzansiTechPayroll
             this.btnCalculate.Text = "CALCULATE";
             this.btnCalculate.UseVisualStyleBackColor = false;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
-            // 
-            // btnReset
-            // 
+            
+
+            
             this.btnReset.BackColor = System.Drawing.Color.Lavender;
             this.btnReset.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnReset.Location = new System.Drawing.Point(144, 344);
@@ -291,9 +293,9 @@ namespace MzansiTechPayroll
             this.btnReset.Text = "RESET";
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // btnExit
-            // 
+            
+
+            
             this.btnExit.BackColor = System.Drawing.Color.Lavender;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnExit.Location = new System.Drawing.Point(241, 344);
@@ -303,9 +305,9 @@ namespace MzansiTechPayroll
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // MainForm
-            // 
+            
+
+             
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(660, 450);
             this.Controls.Add(this.lblTitle);
@@ -426,12 +428,12 @@ namespace MzansiTechPayroll
         // ============== RESET BUTTON CLICK EVENT ==============
         private void btnReset_Click(object sender, EventArgs e)
         {
-            // Clear all input fields
+            
             txtContractorName.Clear();
             txtHoursWorked.Clear();
             txtDependents.Clear();
 
-            // Reset all output labels to zero
+            
             lblGrossPayValue.Text = "R 0.00";
             lblUIFValue.Text = "R 0.00";
             lblPAYEValue.Text = "R 0.00";
@@ -439,14 +441,14 @@ namespace MzansiTechPayroll
             lblTotalDeductionsValue.Text = "R 0.00";
             lblNetPayValue.Text = "R 0.00";
 
-            // Set focus back to the first field
+            
             txtContractorName.Focus();
         }
 
         // ============== EXIT BUTTON CLICK EVENT ==============
         private void btnExit_Click(object sender, EventArgs e)
         {
-            // Ask for confirmation before closing
+            
             DialogResult result = MessageBox.Show("Are you sure you want to exit the Payroll System?", "Confirm Exit",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
